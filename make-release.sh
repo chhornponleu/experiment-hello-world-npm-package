@@ -4,7 +4,7 @@ git pull
 
 # Remove our former release branch
 git branch -D lastest-release 2>/dev/null
-git push origin --delete lastest-release 2>/dev/null
+# git push origin --delete lastest-release 2>/dev/null
 
 # Create a new branch to run the build under
 git checkout -b lastest-release
@@ -17,7 +17,7 @@ npm install
 # npm test
 
 # Build and update docs
-npm run build && git add -A docs
+npm run build # && git add -A docs
 
 # Collect the version number
 releaseVersion=`node -e "let package = require('./package.json'); console.log(package.version)"`
@@ -31,5 +31,5 @@ git add -A && git commit -m "[BUILD] $releaseVersion"
 # Make a new tag off of the latest build
 git checkout main
 git tag "$releaseVersion" lastest-release
-git push origin "$releaseVersion"
-git push origin lastest-release
+# git push origin "$releaseVersion"
+# git push origin lastest-release
