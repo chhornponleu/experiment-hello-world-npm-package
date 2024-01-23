@@ -1,0 +1,27 @@
+{
+  "name": "experiment-hello-world-npm-package",
+  "version": "1.0.0",
+  "description": "my hello world npm package",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "ponleu",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chhornponleu/experiment-hello-world-npm-package.git"
+  },
+  "keywords": [
+    "hello",
+    "world"
+  ],
+  "bugs": {
+    "url": "https://github.com/chhornponleu/experiment-hello-world-npm-package/issues"
+  },
+  "homepage": "https://github.com/chhornponleu/experiment-hello-world-npm-package#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
